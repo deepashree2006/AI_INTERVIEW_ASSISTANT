@@ -4,5 +4,6 @@ from groq import Groq
 st.set_page_config(page_title="AI Interview Assistant",layout="centered")
 st.title("  AI _INTERVIEW_ASSISTANT")
 st.caption("practice interviews with AI generated questions and constructive feedback.")
-st.caption("launched by Deepashree")                   
+st.caption("launched by Deepashree")              
+st.write("Department of AI & DS")
                 
