@@ -14,9 +14,7 @@ except (keyError, FileNotFoundError):
   st.error("GROQ_API_KEY is missing.add it to streamlitcloud--> App settings secrets")
   st.stop()
                 
-import streamlit as st
-from groq import Groq
-client = Groq(api_key=st.secrets["GROQ_API_KEY"])
+
 
 
 role = st.selectbox("Select Job Role",[
