@@ -6,4 +6,11 @@ st.title("  AI _INTERVIEW_ASSISTANT")
 st.caption("practice interviews with AI generated questions and constructive feedback.")
 st.caption("launched by Deepashree")              
 st.write("Department of AI & DS")
+
+try:
+  client = Groq(api_key=st.secrets["GROQ_API_KEY"])
+  st.write("API CONNECTION SUCCESSFULL")
+except (keyError, FileNotFoundError):
+  st.error("GROQ_API_KEY is missing.add it to streamlitcloud--> App settings secrets")
+  st.stop()
                 
