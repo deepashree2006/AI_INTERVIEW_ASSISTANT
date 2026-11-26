@@ -17,7 +17,7 @@ except (keyError, FileNotFoundError):
 import streamlit as st
 from groq import Groq
 client = Groq(api_key=st.secrets["GROQ_API_KEY"])
-st.title("AI INTERVIEW ASSISTANT")
+
 
 role = st.selectbox("Select Job Role",[
   "Python Developer",
